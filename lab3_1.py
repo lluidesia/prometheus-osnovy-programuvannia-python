@@ -1,12 +1,23 @@
+"""
+Вхідні дані: 3 дійсних числа a, b, c. Передаються в програму як аргументи командного рядка.
+Результат роботи: рядок "triangle", якщо можуть існувати відрізки з такою довжиною та з них можна скласти трикутник, або "not triangle" -- якщо ні.
+Наприклад
+Вхідні дані: 10 20 30
+Приклад виклику: python lab3_1.py 10 20 30
+Результат: not triangle
+
+"""
 
 a = 55
 b = 54.2
 c = 0.8
 
-if a<=0 or b<=0 or c<=0:
+if a <= 0 or b <= 0 or c <= 0:
 	print("not triangle")
 
-elif a+b>c or a+c>b or b+c>a:
+elif a + b > c or a + c > b or b + c > a:
 	print("triangle")
 else:
 	print("not triangle")
+	
+	
