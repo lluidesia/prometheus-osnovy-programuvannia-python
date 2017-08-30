@@ -21,21 +21,21 @@
 '''
 
 def count_holes(n):
-	if type(n) != float:
-		if type(n) == str:
-			if n.isdigit():
-				n = str(int(n))
-			else:
-				return 'ERROR'
+    if type(n) != float:
+        if type(n) == str:
+            if n.isdigit():
+                n = str(int(n))
+            else:
+                return 'ERROR'
 
-		sum = 0
-		for i in str(n):
-			if i == '4' or i == '6' or i == '9' or i == '0':
-				sum = sum + 1
-			if i == '8':
-				sum = sum + 2
-		return sum
+        sum = 0
+        for i in str(n):
+            if i == '4' or i == '6' or i == '9' or i == '0':
+                sum = sum + 1
+            if i == '8':
+                sum = sum + 2
+        return sum
 
 
-	elif type(n) == float:
-		return 'ERROR'
+    elif type(n) == float:
+        return 'ERROR'
